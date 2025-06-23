@@ -1,0 +1,87 @@
+/* Archivo: assets/css/responsive.css */
+
+/* Reglas generales */
+.image.fit img {
+  width: 100%;
+  height: auto;
+}
+
+/* Nav horizontal scrollable en móviles */
+@media screen and (max-width: 768px) {
+  #nav .links {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #nav .links li {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding-right: 1rem;
+  }
+
+  .menu-flecha {
+    display: none;
+  }
+
+  .post.featured {
+    padding: 1rem;
+  }
+
+  .post.featured .image.main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .justificar,
+  .parrafo-hover,
+  .descripcion-oculta {
+    text-align: justify;
+  }
+
+  .actions.special {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions.special li {
+    margin-bottom: 0.5rem;
+  }
+
+  footer .fields .field {
+    width: 100%;
+  }
+
+  #footer .split {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+  .titulo-principal {
+    font-size: 1.5rem;
+  }
+
+  .button.large,
+  .button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  #footer .icons.alt {
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  #copyright ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+}
