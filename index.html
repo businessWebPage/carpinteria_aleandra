@@ -589,22 +589,33 @@
 							<!---------------------------------------------------------------------------------------------------------------->
 							<!---------------------------------------------------------------------------------------------------------------->
 							<!---------------------------------------------------------------------------------------------------------------->
-							<form action="https://formsubmit.co/TU_CORREO" method="POST">
-								<label>Nombre:</label>
-								<input type="text" name="name" required>
+							<form action="https://formsubmit.co/wwwcorreoprueba@gmail.com" method="POST">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Nombre:</label>
+										<input type="text" name="name" id="name" placeholder="Digite su nombre" required>
+									</div>
 
-								<label>Correo:</label>
-								<input type="email" name="email" required>
+									<div class="field">
+										<label for="email">Correo:</label>
+										<input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+									</div>
 
-								<label>Mensaje:</label>
-								<textarea name="message" required></textarea>
+									<div class="field">
+										<label for="message">Mensaje:</label>
+										<textarea name="message" id="message" placeholder="Deje un mensaje:" rows="3" required></textarea>
+									</div>
+								</div>
 
-								<!-- Configuración opcional -->
-								<input type="hidden" name="_next" value="https://businessWebPage.github.io/carpinteria_aleandra/gracias.html">
+								<!-- Configuración opcional de FormSubmit -->
+								<input type="hidden" name="_next" value="https://businesswebpage.github.io/carpinteria_aleandra/gracias.html">
 								<input type="hidden" name="_captcha" value="false">
 
-								<button type="submit">Enviar</button>
+								<ul class="actions">
+									<li><input type="submit" value="Enviar Mensaje"></li>
+								</ul>
 							</form>
+
 							<!---------------------------------------------------------------------------------------------------------------->
 
 						</section>
