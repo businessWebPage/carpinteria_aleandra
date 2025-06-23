@@ -3,51 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gracias por tu mensaje</title>
+    <title>¡Gracias por tu mensaje!</title>
     <style>
         body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffecd2, #f8d2c6);
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
             text-align: center;
             padding: 50px;
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
         }
+
         .container {
-            background: white;
+            background: #fff;
             max-width: 500px;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 100px auto;
+            padding: 40px;
+            border-radius: 50px;  /*BORDE DONDE VA EL TEXTO*/
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            animation: slideDown 1s ease;
+            position: relative;
+            z-index: 2;
         }
+
         h1 {
-            color: #4CAF50;
+            color: #ee2550;   /* Texto: Gracias por tu mensaje  (COLOR)  #25d6ee */
             margin-bottom: 20px;
+            font-size: 30px;
         }
+
         p {
-            font-size: 18px;
-            color: #333;
+            font-size: 20px;
+            margin-bottom: 25px;
         }
+
         a {
             display: inline-block;
-            margin-top: 20px;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
+            background-color: #f53252;  /* Botón de volver al INICIO (COLOR)*/
+            color: white;               /*Tipo de letra del texto del boton VOLVER AL INICIO*/
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            transition: background-color 0.s;
         }
+
         a:hover {
-            background-color: #45a049;
+            background-color: #42f9f9;  /* Cambia de color al pasar el mouse */
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo y animación de serpentinas en toda la pantalla */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f1f11f;
+            animation: fall linear infinite;
+            opacity: 0.8;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-20px) rotate(0deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
         }
     </style>
+
+
 </head>
-<body>
+    <body>
+            <!-- Serpentinas animadas cayendo en toda la pantalla ------------------------------------------------------------>
+        <script>
+            for (let i = 0; i < 100; i++) {
+                let confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = Math.random() * window.innerWidth + 'px';
+                confetti.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                confetti.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                confetti.style.animationDelay = (Math.random() * 5) + 's';
+                document.body.appendChild(confetti);
+            }
+        </script>
+        <!--------------------------------------------------------------------------------------------------------------------->
+        
 
-<div class="container">
-    <h1>¡Gracias por tu mensaje!</h1>
-    <p>Nos pondremos en contacto contigo lo antes posible.</p>
-    <a href="index.html">Volver al Inicio</a>
-</div>
+        <div class="container">
+            <h1>¡Hemos recibido tu mensaje!</h1>
+            <p>
+                Muy pronto nos pondremos en contacto contigo.<br>
+                <strong> 
+                    <i><span style="font-size: 15px;">Carpintería Aleandra, a tu servicio!</span></i>
+                </strong>
+            </p>
+            <a href="index.html">Volver al Inicio</a>
+        </div>
 
-</body>
+
+
+    </body>
 </html>
