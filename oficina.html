@@ -130,11 +130,12 @@
 						</div>
 						<!----------------------------------------------------------------------------------------------------->
 
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<ul class="icons alt">
+							<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+							<li><a href="https://wa.me/51975016633" class="icon brands alt fa-whatsapp" target="_blank"><span class="label">WhatsApp</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100083140428513" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/carpinteria_aleandra?igsh=enZlM2F5YzFzc3Ry" class="icon brands alt fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+							<!--<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
 						</ul>
 					</nav>
                 </div>
@@ -150,7 +151,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 1  ----------------------------------------------->
 
@@ -182,7 +183,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 2 ----------------------------------------------->
 
@@ -214,7 +215,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA  3 ----------------------------------------------->
 
@@ -246,7 +247,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 4  ----------------------------------------------->
 
@@ -277,7 +278,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 5 ----------------------------------------------->
 
@@ -308,7 +309,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 6----------------------------------------------->
 
@@ -341,7 +342,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA  7 ----------------------------------------------->
 
@@ -374,7 +375,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 8  ----------------------------------------------->
 
@@ -406,7 +407,7 @@
 
 								<article >
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!--------------------------------------   OFICINA 9----------------------------------------------->
 
@@ -468,31 +469,46 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form action="https://formsubmit.co/carpinteriaaleandra@gmail.com" method="POST">
 								<div class="fields">
 									<div class="field">
-										<label for="name">Nombre </label>
-										<input type="text" name="name" id="name" placeholder="Digite su nombre"/>
+										<label for="name">Nombre:</label>
+										<input type="text" name="name" id="name" placeholder="Digite su nombre" required>
 									</div>
+
 									<div class="field">
-										<label for="email">Correo</label>
-										<input type="text" name="email" id="email" placeholder="Ingrese su correo" />
+										<label for="email">Correo:</label>
+										<input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
 									</div>
+
 									<div class="field">
-										<label for="message">Mensaje</label>
-										<textarea name="message" id="message" placeholder="Deje un mensaje:" rows="3"></textarea>
+										<label for="email">Celular:</label>
+										<input type="text" name="telefono" id="telefono" placeholder="Ingrese algún número de contacto">
+									</div>
+
+									<div class="field">
+										<label for="message">Mensaje:</label>
+										<textarea name="message" id="message" placeholder="Deje un mensaje:" rows="3" required></textarea>
 									</div>
 								</div>
+
+								<!-- Configuración opcional de FormSubmit -->
+								<input type="hidden" name="_next" value="https://businesswebpage.github.io/carpinteria_aleandra/gracias.html">
+								<input type="hidden" name="_captcha" value="false">
+
 								<ul class="actions">
-									<li><input type="submit" value="Aceptar" /></li>
+									<li><input type="submit" value="Enviar Mensaje"></li>
 								</ul>
 							</form>
+
+							<!---------------------------------------------------------------------------------------------------------------->
+
 						</section>
 						<section class="split contact">
 							<section class="alt">
 								<h3>Dirección</h3>
-								<p>C. Coronel Alfonso Ugarte Lima<br />
-								Provincia de Lima</p>
+								<p>Villa Bolivar - VMT - 15804<br />
+								Lima - Perú</p>
 							</section>
 							<section>
 								<h3>Teléfono</h3>
@@ -500,23 +516,24 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="mailto:fabricaciones.aleandra@gmail.com">fabricaciones.aleandra@gmail.com</a></p>
+								<p><a href="mailto:carpinteriaaleandra@gmail.com">carpinteriaaleandra@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+									<li><a href="https://wa.me/51975016633" class="icon brands alt fa-whatsapp" target="_blank"><span class="label">WhatsApp</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100083140428513" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/carpinteria_aleandra?igsh=enZlM2F5YzFzc3Ry" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+									<!--<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
 								</ul>
-							</section>
+							</section>	
 						</section>
 					</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul style="color: black;"><li>&copy; Carpintería</li> ALEANDRA<li> WhatsAPP: <a href="https://wa.me/51975016633" target="_blank">+51 975 016 633</a></li> LIMA - PERÚ</ul>
+						<ul style="color: rgb(9, 0, 0);"><li>&copy; Carpintería</li> ALEANDRA<li> WhatsAPP: <a href="https://wa.me/51975016633" target="_blank">+51 975 016 633</a></li> LIMA - PERÚ</ul>
 					</div>
 			</div>
 

@@ -1,18 +1,4 @@
 <!DOCTYPE HTML>
-<!-- Trabajo elaborado           Jueves  - 19/06/2025 - hora  20:15pm hasta Viernes 20/06/2025  9:58am  (1ra parte) (15h 45min)
-	 Iniciando la segunda parte  Viernes - 20/06/2025 - hora  17:38pm hasta Sábado  21/06/2025  01:34am (2da parte) (7h 56min)
-	 Iniciando la tercera parte  Sábado  - 21/06/2025 - hora  12:30pm hasta Sábado  21/06/2025  13:49pm (3ra parte) (1h 19min)
-	 Iniciando la cuarta parte   Domingo - 22/06/2025 - hora  11:59pm hasta Lunes   23/06/2025  11:37am (4ta parte)  (8h 56min)    -2h 42min
-	 	inicio 11:59pm - 4:10am - (4h 11min)
-	 	inicio 5:14  -  5:59am - (-45)             
-	 	inicio 5:59  -  6:13am - (+14min)
-	 	inicio 6:29  -  6:35am - (+6min)
-	 	inicio 7:12  -  9:12am - (+2h) 
-	 	inicio 10:12 -  11:37am - (+2h 25min)
-
-	Iniciando la quinta parte   Lunes - 23/06/2025 - hora  13:59pm hasta Lunes   23/06/2025  11:37am (4ta parte)  (8h 56min)
-		inicio 13:53pm -  - (+)
--->
 <html>
 	<head>
 		<title>carpinteriaAleandra</title>
@@ -35,7 +21,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 		<!--       VER TODOS LOS APARTADOS DEL NAV ---------------------------------------------------------------------->
-	<!--<style>
+		<!--<style>
 			/* Asegura que el menú de navegación permita scroll si tiene muchos elementos */
 			#nav {
 				max-height: 90vh; /* altura máxima visible del nav */
@@ -43,6 +29,41 @@
 			}
 		</style> -->
 
+		<!-----------------------------------PARA QUE SE VEA MAS PEQUEÑO LO DE anterior y siguiente ----------------------->
+
+
+		    <style>
+				#paginacion-dinamica a {
+					display: inline-block;
+					padding: 6px 12px;
+					margin: 4px;
+					font-size: 16px;
+					text-decoration: none;
+					background-color: #f0f0f0;
+					color: #333;
+					border-radius: 4px;
+				}
+
+				#paginacion-dinamica a:hover {
+					background-color: #ddd;
+				}
+
+				#paginacion-dinamica a.previous,
+				#paginacion-dinamica a.next {
+					font-weight: bold;
+				}
+
+				/* Ajuste responsivo para pantallas pequeñas */
+				@media (max-width: 600px) {
+					#paginacion-dinamica a {
+						padding: 4px 8px;
+						margin: 2px;
+						font-size: 12px;
+					}
+				}
+			</style>
+
+		<!---------------------------------------------------------------------------------------------------------------------------->
 
 	</head>
 	<body class="is-preload">
@@ -136,7 +157,7 @@
 							<li><a href="vestuarios.html">Vestuarios</a></li>
 						</ul>
 
-						<!-----------------------------------COLOCAR LA FLECHA EN EL NAV ------------------------------------->
+						<!-----------------------------------COLOCAR LA FLECHA DERECHA EN EL NAV ------------------------------------->
 
 						<div class="menu-flecha derecha" onclick="scrollMenu(1)">
 							<i class="fas fa-arrow-right"></i>
@@ -146,8 +167,8 @@
 						<ul class="icons alt">
 							<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
 							<li><a href="https://wa.me/51975016633" class="icon brands alt fa-whatsapp" target="_blank"><span class="label">WhatsApp</span></a></li>
-							<li><a href="https://www.facebook.com/profile.php?id=100083140428513" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/carpinteria_aleandra?igsh=enZlM2F5YzFzc3Ry" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100083140428513" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/carpinteria_aleandra?igsh=enZlM2F5YzFzc3Ry" class="icon brands alt fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
 							<!--<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
 						</ul>
 
@@ -159,7 +180,7 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">Junio 2022</span>
+									<!-- <span class="date">Junio 2022</span> -->
 									<h2><a href="javascript:void(0)">Puerta levadiza de cochera en madera<br /></a></h2>
 
 									<p class="parrafo-hover">
@@ -191,7 +212,7 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">April 24, 2017</span>
+										<!-- <span class="date">April 24, 2017</span> -->
 
 										<!-----------------------------------         BAÑO    ----------------------------------------------->
 
@@ -224,7 +245,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 22, 2017</span>
+										<!-- <span class="date">April 22, 2017</span> -->
 										<h2><a href="javascript:void(0)">Closets<br />
 										espacioso</a></h2>
 									</header>
@@ -252,7 +273,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 18, 2017</span>
+										<!-- <span class="date">April 18, 2017</span> -->
 										<h2><a href="javascript:void(0)">Cocina<br />
 										con acabado de marmol</a></h2>
 									</header>
@@ -280,7 +301,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 14, 2017</span>
+										<!-- <span class="date">April 14, 2017</span> -->
 										<h2><a href="javascript:void(0)">Comedor<br />
 										de madera</a></h2>
 									</header>
@@ -309,7 +330,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 11, 2017</span>
+										<!-- <span class="date">April 11, 2017</span> -->
 										<h2><a href="javascript:void(0)">Dormitorio<br />
 										matrimonial</a></h2>
 									</header>
@@ -338,7 +359,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 7, 2017</span>
+										<!-- <span class="date">April 7, 2017</span> -->
 										<h2><a href="javascript:void(0)">Escalera <br />
 										flotante</a></h2>
 									</header>
@@ -368,7 +389,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 7, 2017</span>
+										<!-- <span class="date">April 7, 2017</span> -->
 										<h2><a href="javascript:void(0)">Oficina<br />
 										Escritorio</a></h2>
 									</header>
@@ -396,7 +417,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 7, 2017</span>
+										<!-- <span class="date">April 7, 2017</span> -->
 										<h2><a href="javascript:void(0)">Puerta<br />
 										contraplacada</a></h2>
 									</header>
@@ -426,7 +447,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 7, 2017</span>
+										<!-- <span class="date">April 7, 2017</span> -->
 										<h2><a href="javascript:void(0)">SALA<br />
 										MUEBLE DE TV</a></h2>
 									</header>
@@ -455,7 +476,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 7, 2017</span>
+										<!-- <span class="date">April 7, 2017</span> -->
 										<h2><a href="javascript:void(0)">TERRAZA<br />
 										TECHO SOL Y SOMBRA</a></h2>
 									</header>
@@ -483,7 +504,7 @@
 
 								<article>
 									<header>
-										<span class="date">April 7, 2017</span>
+										<!-- <span class="date">April 7, 2017</span> -->
 										<h2><a href="javascript:void(0)">VESTUARIO<br />
 										LOCKER DE MADERA</a></h2>
 									</header>
@@ -650,17 +671,17 @@
 								<ul class="icons alt">
 									<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
 									<li><a href="https://wa.me/51975016633" class="icon brands alt fa-whatsapp" target="_blank"><span class="label">WhatsApp</span></a></li>
-									<li><a href="https://www.facebook.com/profile.php?id=100083140428513" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/carpinteria_aleandra?igsh=enZlM2F5YzFzc3Ry" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100083140428513" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/carpinteria_aleandra?igsh=enZlM2F5YzFzc3Ry" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 									<!--<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
 								</ul>
-							</section>
+							</section>	
 						</section>
 					</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul style="color: black;"><li>&copy; Carpintería</li> ALEANDRA<li> WhatsAPP: <a href="https://wa.me/51975016633" target="_blank">+51 975 016 633</a></li> LIMA - PERÚ</ul>
+						<ul style="color: rgba(255, 255, 255, 0.99);"><li>&copy; Carpintería</li> ALEANDRA<li> WhatsAPP: <a href="https://wa.me/51975016633" target="_blank">+51 975 016 633</a></li> LIMA - PERÚ</ul>
 					</div>
 			</div>
 
